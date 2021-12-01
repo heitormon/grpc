@@ -1,0 +1,16 @@
+{
+  "name": "grpc-node-consumer",
+  "version": "1.0.0",
+  "description": "Node client cosumer gRPC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Heitor Nobuo Matsusaki Nozu",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.1.0",
+    "@grpc/proto-loader": "^0.5.0"
+  }
+}
