@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.heitor.grpc;
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+
+message Stock{
+  string code = 1;
+  string description = 2;
+  double price = 3;
+  string date = 4;
+}
+
+service StockService{
+  rpc stockStatics(google.protobuf.Empty) returns (stream Stock);
+}
