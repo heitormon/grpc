@@ -1,0 +1,13 @@
+syntax = "proto3";
+package com.heitor.grpc;
+option go_package = "./message";
+
+message MessageRequest{
+  string text = 1;
+}
+message MessageResponse{
+  string text = 1;
+}
+service MessageService{
+  rpc sendMessage(MessageRequest) returns (MessageResponse);
+}
